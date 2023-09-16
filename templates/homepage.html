@@ -1,0 +1,26 @@
+{% extends 'structure.html' %}
+{% block main %}
+<header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Mohammad</span></a></h1>
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+        <h1>Welcome</h1>
+        <h2>We are team of talented designers making websites with Bootstrap</h2>
+    </div>
+</section>
+{%endblock%}

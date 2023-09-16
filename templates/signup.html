@@ -1,0 +1,102 @@
+{% extends 'structure.html' %}
+{% block main%}
+<!--
+    <div class="ce">
+        <form action="/signup/" method="POST" class="login-form">
+            <h1>Sign In</h1>
+            <div class="textb">
+            <input type="text" name="user" required>
+            <div class="placeholder">Username</div>
+            </div>
+        
+            <div class="textb">
+            <input type="password" name="passw"required>
+            <div class="placeholder">Password</div>
+            <div class="show-password fas fa-eye-slash"></div>
+            </div>
+            <div class="textb">
+                <input type="text" name="f_c" required>
+                <div class="placeholder">Favorite color</div>
+            </div>
+            
+                <input type="submit" id="b">
+                <p>{{message}}</p>
+        </form>
+    </div>
+	-->
+
+<style>
+	.m{
+		text-align: center;
+		font-size: 50px;
+	}
+</style>
+<form action="/signup/" method="POST">
+    <div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more m">{{message}}</div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-59">
+						Sign Up
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Name is required">
+						<span class="label-input100">Full Name</span>
+						<input class="input100" type="text" name="fullname" placeholder="Name...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<span class="label-input100">Email</span>
+						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Username...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="text" name="password" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Mobile</span>
+						<input class="input100" type="text" name="mobile" placeholder="Mobile...">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Address</span>
+						<input class="input100" type="text" name="adde" placeholder="Address...">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Skill</span>
+						<input class="input100" type="text" name="skill" placeholder="Skill...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Sign Up
+							</button>
+						</div>
+
+						<a href="/login" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+							Sign in
+							<i class="fa fa-long-arrow-right m-l-5"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</form>
+{%endblock%}
